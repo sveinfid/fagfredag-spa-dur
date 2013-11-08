@@ -1,0 +1,27 @@
+﻿<div class="panel panel-primary">
+    <div class="panel-heading">
+        <h1 class="panel-title" data-bind="text:location" />
+    </div>
+    <div class="panel-body">
+        <div class="row">
+            <div class="col-sm-2 col-sm-offset-1 temperature">
+                <span>7°</span>
+            </div>
+            <div class="col-sm-4 weather">
+                <img src="../images/symbols/09.png">
+            </div>
+            <div class="col-sm-5">
+                <div class="info">
+                    <p>Nedbør</p>
+                    <p>0.5 – 1.1 mm</p>
+                </div>
+                <div class="info">
+                    <p>Vind:</p>
+                    <p>Svak vind, 3 m/s fra sør</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<pre data-bind="text: ko.toJSON($data, null, 2)"></pre>

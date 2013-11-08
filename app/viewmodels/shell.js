@@ -3,7 +3,7 @@
         router: router,
         activate: function () {
             router.map([
-                { route: '', title:'Hello', moduleId: 'viewmodels/hello', nav: true },
+                { route: '', title:'Weather', moduleId: 'viewmodels/weather', nav: true },
             ]).buildNavigationModel();
             
             return router.activate();
