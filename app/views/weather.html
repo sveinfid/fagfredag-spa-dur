@@ -5,23 +5,23 @@
     <div class="panel-body">
         <div class="row">
             <div class="col-sm-2 col-sm-offset-1 temperature">
-                <span>7°</span>
+                <span data-bind="text:currentTemperature"></span>
             </div>
             <div class="col-sm-4 weather">
-                <img src="../images/symbols/09.png">
+                <img data-bind="attr:{src:forecast().forecasts[0].periods[0].symbolUrl}">
             </div>
             <div class="col-sm-5">
                 <div class="info">
-                    <p>Nedbør</p>
-                    <p>0.5 – 1.1 mm</p>
+                    <p>Nedbør:</p>
+                    <p data-bind="text:precipitation"></p>
                 </div>
                 <div class="info">
                     <p>Vind:</p>
-                    <p>Svak vind, 3 m/s fra sør</p>
+                    <p data-bind="text:wind"></p>
                 </div>
             </div>
         </div>
     </div>
 </div>
 
-<pre data-bind="text: ko.toJSON($data, null, 2)"></pre>
+<!--<pre data-bind="text: ko.toJSON($data, null, 2)"></pre>-->
